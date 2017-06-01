@@ -1,0 +1,6 @@
+FROM ruby:2.4.1-alpine
+
+WORKDIR /app
+
+# Update the Package Install nodejs
+RUN apk update && apk add --no-cache nodejs-6.10.3-r0
